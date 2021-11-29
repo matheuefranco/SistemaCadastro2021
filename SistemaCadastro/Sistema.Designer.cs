@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sistema));
             this.panel1 = new System.Windows.Forms.Panel();
             this.marcador = new System.Windows.Forms.Panel();
             this.btnBusca = new System.Windows.Forms.Button();
@@ -230,7 +229,7 @@
             this.BtnConfirmaCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnConfirmaCadastro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnConfirmaCadastro.ForeColor = System.Drawing.Color.DimGray;
-            this.BtnConfirmaCadastro.Image = ((System.Drawing.Image)(resources.GetObject("BtnConfirmaCadastro.Image")));
+            this.BtnConfirmaCadastro.Image = global::SistemaCadastro.Properties.Resources.add;
             this.BtnConfirmaCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnConfirmaCadastro.Location = new System.Drawing.Point(380, 266);
             this.BtnConfirmaCadastro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -323,7 +322,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Image = global::SistemaCadastro.Properties.Resources.close;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(1043, 35);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

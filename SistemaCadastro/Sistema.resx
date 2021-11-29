@@ -57,29 +57,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
-  <data name="BtnConfirmaCadastro.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3WAAAN1gGQb3mcAAAAB3RJ
-        TUUH4QsMFS05SQhfUgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADcSURBVEhL
-        7dPLDcIwEIThNEAJ3KgFcaAj6qAITnTBGYki6AKxXxJQHCU8ZPuWXxpp2Y3XEp5pfmQVOobuvdR6xTiH
-        LqF9L7VeEdahR2jT/upQ65llsw3dujJBzyybXejalQl6ZtksF7zhCI/m0FCH0NwFZuPv7UjcJTA8zXac
-        4eBYp9AYvalv7bDLzjaMUik4Q5/nYpeddrfRl87S2Gl3/Quq/0XVH/lFNZt+w6G5C8yyWS74ikfjjDF6
-        ZtlwBNsNc6LW+8stn+BpwZFOUusVQ2CkUvRJnYRomqZ5Au4bWyFTt0tIAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3WAAAN1gGQb3mcAAAAB3RJ
-        TUUH4QsMFxUW9sIKngAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE9SURBVFhH
-        7Ze7SgNBGEYj2mtpETtFH8LCFzCFtQ9iaWkj2HlDsIoJiX3eQqwVLLzUgo3a6Pl2Hdgdd+LCvzOskAMn
-        zA6E/7A7gWwHJondxRJfeIh7CbzFfSyhgI18GZ0Btj9gEZcieY0H3t6vgFfUXiqzDz9gB5cju4nBgK18
-        GRXNnAXMAv5vwBEWv+PTxeN8GcQUcIovuJ5dldHwOxxmV2FMAXN4js+4po0fisMXtDEFU4BQhO6EIlbR
-        Db/CefwLc4BQxAk+4T32sc5w0UiAWME3/MCqMxGikQB320d4gY+ox1EHc0BxuA6cO5h1I0wB/nCHO5h1
-        IkwBN+gPd7iD+ZBdhTEFbOO037kievkyiCmgCdoVcIb6tyrfMWnApecnJg3wSf4IfFoRoDNR9XLZpHoh
-        rgwYY9VrdQQ7k28jyd/DXLlUswAAAABJRU5ErkJggg==
-</value>
-  </data>
 </root>
