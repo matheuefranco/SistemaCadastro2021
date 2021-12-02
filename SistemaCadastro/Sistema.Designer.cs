@@ -50,12 +50,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tabBuscar = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
+            this.dgBandas = new System.Windows.Forms.DataGridView();
+            this.lblMensagem = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabCadastrar.SuspendLayout();
+            this.tabBuscar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgBandas)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -308,6 +312,8 @@
             // tabBuscar
             // 
             this.tabBuscar.BackColor = System.Drawing.Color.White;
+            this.tabBuscar.Controls.Add(this.lblMensagem);
+            this.tabBuscar.Controls.Add(this.dgBandas);
             this.tabBuscar.Location = new System.Drawing.Point(4, 30);
             this.tabBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabBuscar.Name = "tabBuscar";
@@ -334,6 +340,26 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // dgBandas
+            // 
+            this.dgBandas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgBandas.Location = new System.Drawing.Point(36, 37);
+            this.dgBandas.Name = "dgBandas";
+            this.dgBandas.ReadOnly = true;
+            this.dgBandas.RowHeadersWidth = 51;
+            this.dgBandas.RowTemplate.Height = 29;
+            this.dgBandas.Size = new System.Drawing.Size(797, 291);
+            this.dgBandas.TabIndex = 0;
+            // 
+            // lblMensagem
+            // 
+            this.lblMensagem.AutoSize = true;
+            this.lblMensagem.ForeColor = System.Drawing.Color.Red;
+            this.lblMensagem.Location = new System.Drawing.Point(104, 345);
+            this.lblMensagem.Name = "lblMensagem";
+            this.lblMensagem.Size = new System.Drawing.Size(0, 21);
+            this.lblMensagem.TabIndex = 1;
+            // 
             // Sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -359,6 +385,9 @@
             this.tabControl1.ResumeLayout(false);
             this.tabCadastrar.ResumeLayout(false);
             this.tabCadastrar.PerformLayout();
+            this.tabBuscar.ResumeLayout(false);
+            this.tabBuscar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgBandas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -387,5 +416,7 @@
         private System.Windows.Forms.Panel marcador;
         private System.Windows.Forms.TextBox txtranking;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dgBandas;
+        private System.Windows.Forms.Label lblMensagem;
     }
 }

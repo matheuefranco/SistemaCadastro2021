@@ -43,14 +43,17 @@ namespace SistemaCadastro
         }
 
 
-
-
-
+        void listaDGBandas()
+        {
+            ConectaBanco con = new ConectaBanco();
+            dgBandas.DataSource = con.listaBandas();
+            lblMensagem.Text = con.mensagem;
+        }
 
 
         private void Sistema_Load(object sender, EventArgs e)
         {
-            
+            listaDGBandas();
         }
 
 

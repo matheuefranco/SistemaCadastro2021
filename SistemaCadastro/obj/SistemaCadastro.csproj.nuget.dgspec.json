@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mefma\\OneDrive\\Documentos\\Visual Studio 2019\\Projects\\SistemaCadastro2021\\SistemaCadastro\\SistemaCadastro\\SistemaCadastro.csproj": {}
+    "C:\\Users\\mefma\\OneDrive\\Documentos\\Visual Studio 2019\\Projects\\Sistema Cadastro Alunos 2021\\SistemaCadastro\\SistemaCadastro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mefma\\OneDrive\\Documentos\\Visual Studio 2019\\Projects\\SistemaCadastro2021\\SistemaCadastro\\SistemaCadastro\\SistemaCadastro.csproj": {
+    "C:\\Users\\mefma\\OneDrive\\Documentos\\Visual Studio 2019\\Projects\\Sistema Cadastro Alunos 2021\\SistemaCadastro\\SistemaCadastro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mefma\\OneDrive\\Documentos\\Visual Studio 2019\\Projects\\SistemaCadastro2021\\SistemaCadastro\\SistemaCadastro\\SistemaCadastro.csproj",
+        "projectUniqueName": "C:\\Users\\mefma\\OneDrive\\Documentos\\Visual Studio 2019\\Projects\\Sistema Cadastro Alunos 2021\\SistemaCadastro\\SistemaCadastro.csproj",
         "projectName": "SistemaCadastro",
-        "projectPath": "C:\\Users\\mefma\\OneDrive\\Documentos\\Visual Studio 2019\\Projects\\SistemaCadastro2021\\SistemaCadastro\\SistemaCadastro\\SistemaCadastro.csproj",
+        "projectPath": "C:\\Users\\mefma\\OneDrive\\Documentos\\Visual Studio 2019\\Projects\\Sistema Cadastro Alunos 2021\\SistemaCadastro\\SistemaCadastro.csproj",
         "packagesPath": "C:\\Users\\mefma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mefma\\OneDrive\\Documentos\\Visual Studio 2019\\Projects\\SistemaCadastro2021\\SistemaCadastro\\SistemaCadastro\\obj\\",
+        "outputPath": "C:\\Users\\mefma\\OneDrive\\Documentos\\Visual Studio 2019\\Projects\\Sistema Cadastro Alunos 2021\\SistemaCadastro\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,6 +42,12 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.27, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
