@@ -14,8 +14,6 @@ namespace SistemaCadastro
     public partial class Sistema : Form
     {
 
-        int idalterar;
-
         public Sistema()
         {
             InitializeComponent();
@@ -61,7 +59,20 @@ namespace SistemaCadastro
 
         private void BtnConfirmaCadastro_Click_1(object sender, EventArgs e)
         {
-
+            Banda b = new Banda();
+            b.Nome = txtnome.Text;
+            b.Genero = txtgenero.Text;
+            b.Integrantes = Convert.ToInt32(txtintegrantes.Text);
+            b.Ranking = Convert.ToInt32(txtranking.Text);
+            ConectaBanco con = new ConectaBanco();
+            bool r = con.insereBanda(b);
+            if (r == true)
+            {
+                MessageBox.Show("Dados inseridos com sucesso:)!");
+                listaDGBandas();
+            }
+            else
+                MessageBox.Show(con.mensagem);
         }
     }
 }

@@ -11,11 +11,11 @@ namespace SistemaCadastro
 {
     class ConectaBanco
     {
-        MySqlConnection conexao = new MySqlConnection("server=localhost;user id=root;password=;database=siscadastro");
+        MySqlConnection conexao = new MySqlConnection("server=localhost;user id=root;password=compServer;database=siscadastro");
         public string mensagem;
 
     //----------------------------------------
-        public DataTable listaBandas()
+     public DataTable listaBandas()
         {
             MySqlCommand cmd = new MySqlCommand("lista_bandas", conexao);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -36,6 +36,32 @@ namespace SistemaCadastro
                 conexao.Close();
             }
 
-        }
+        }// fim lista_bandas
+    public bool insereBanda(Banda b)
+     {
+            MySqlCommand cmd = new MySqlCommand("insere_banda", conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("nome", b.Nome);
+            cmd.Parameters.AddWithValue("genero", b.Genero);
+            cmd.Parameters.AddWithValue("integrantes", b.Integrantes);
+            cmd.Parameters.AddWithValue("ranking", b.Ranking);
+            try
+            {
+                conexao.Open();
+                cmd.ExecuteNonQuery(); // executa o comando
+                return true;
+            }
+            catch(MySqlException e)
+            {
+                mensagem = "Erro:" + e.Message;
+                return false;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+        }// fim insereBanda
+
+
     }
 }

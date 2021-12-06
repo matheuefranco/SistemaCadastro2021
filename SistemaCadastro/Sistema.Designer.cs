@@ -49,9 +49,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabBuscar = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dgBandas = new System.Windows.Forms.DataGridView();
             this.lblMensagem = new System.Windows.Forms.Label();
+            this.dgBandas = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -312,7 +312,6 @@
             // tabBuscar
             // 
             this.tabBuscar.BackColor = System.Drawing.Color.White;
-            this.tabBuscar.Controls.Add(this.lblMensagem);
             this.tabBuscar.Controls.Add(this.dgBandas);
             this.tabBuscar.Location = new System.Drawing.Point(4, 30);
             this.tabBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -321,6 +320,27 @@
             this.tabBuscar.Size = new System.Drawing.Size(888, 394);
             this.tabBuscar.TabIndex = 1;
             this.tabBuscar.Text = "Buscar";
+            // 
+            // lblMensagem
+            // 
+            this.lblMensagem.AutoSize = true;
+            this.lblMensagem.ForeColor = System.Drawing.Color.Red;
+            this.lblMensagem.Location = new System.Drawing.Point(247, -38);
+            this.lblMensagem.Name = "lblMensagem";
+            this.lblMensagem.Size = new System.Drawing.Size(0, 20);
+            this.lblMensagem.TabIndex = 1;
+            // 
+            // dgBandas
+            // 
+            this.dgBandas.BackgroundColor = System.Drawing.Color.White;
+            this.dgBandas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgBandas.Location = new System.Drawing.Point(36, 37);
+            this.dgBandas.Name = "dgBandas";
+            this.dgBandas.ReadOnly = true;
+            this.dgBandas.RowHeadersWidth = 51;
+            this.dgBandas.RowTemplate.Height = 29;
+            this.dgBandas.Size = new System.Drawing.Size(797, 291);
+            this.dgBandas.TabIndex = 0;
             // 
             // button2
             // 
@@ -340,32 +360,13 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // dgBandas
-            // 
-            this.dgBandas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgBandas.Location = new System.Drawing.Point(36, 37);
-            this.dgBandas.Name = "dgBandas";
-            this.dgBandas.ReadOnly = true;
-            this.dgBandas.RowHeadersWidth = 51;
-            this.dgBandas.RowTemplate.Height = 29;
-            this.dgBandas.Size = new System.Drawing.Size(797, 291);
-            this.dgBandas.TabIndex = 0;
-            // 
-            // lblMensagem
-            // 
-            this.lblMensagem.AutoSize = true;
-            this.lblMensagem.ForeColor = System.Drawing.Color.Red;
-            this.lblMensagem.Location = new System.Drawing.Point(104, 345);
-            this.lblMensagem.Name = "lblMensagem";
-            this.lblMensagem.Size = new System.Drawing.Size(0, 21);
-            this.lblMensagem.TabIndex = 1;
-            // 
             // Sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1103, 669);
+            this.Controls.Add(this.lblMensagem);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel4);
@@ -386,9 +387,9 @@
             this.tabCadastrar.ResumeLayout(false);
             this.tabCadastrar.PerformLayout();
             this.tabBuscar.ResumeLayout(false);
-            this.tabBuscar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgBandas)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
