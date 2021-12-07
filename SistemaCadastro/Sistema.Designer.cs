@@ -49,8 +49,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabBuscar = new System.Windows.Forms.TabPage();
-            this.lblMensagem = new System.Windows.Forms.Label();
             this.dgBandas = new System.Windows.Forms.DataGridView();
+            this.lblMensagem = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -321,6 +321,18 @@
             this.tabBuscar.TabIndex = 1;
             this.tabBuscar.Text = "Buscar";
             // 
+            // dgBandas
+            // 
+            this.dgBandas.BackgroundColor = System.Drawing.Color.White;
+            this.dgBandas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgBandas.Location = new System.Drawing.Point(35, 53);
+            this.dgBandas.Name = "dgBandas";
+            this.dgBandas.ReadOnly = true;
+            this.dgBandas.RowHeadersWidth = 51;
+            this.dgBandas.RowTemplate.Height = 29;
+            this.dgBandas.Size = new System.Drawing.Size(797, 291);
+            this.dgBandas.TabIndex = 0;
+            // 
             // lblMensagem
             // 
             this.lblMensagem.AutoSize = true;
@@ -329,18 +341,6 @@
             this.lblMensagem.Name = "lblMensagem";
             this.lblMensagem.Size = new System.Drawing.Size(0, 20);
             this.lblMensagem.TabIndex = 1;
-            // 
-            // dgBandas
-            // 
-            this.dgBandas.BackgroundColor = System.Drawing.Color.White;
-            this.dgBandas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgBandas.Location = new System.Drawing.Point(36, 37);
-            this.dgBandas.Name = "dgBandas";
-            this.dgBandas.ReadOnly = true;
-            this.dgBandas.RowHeadersWidth = 51;
-            this.dgBandas.RowTemplate.Height = 29;
-            this.dgBandas.Size = new System.Drawing.Size(797, 291);
-            this.dgBandas.TabIndex = 0;
             // 
             // button2
             // 
