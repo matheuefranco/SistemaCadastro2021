@@ -52,6 +52,8 @@
             this.dgBandas = new System.Windows.Forms.DataGridView();
             this.lblMensagem = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.txtBusca = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -312,6 +314,8 @@
             // tabBuscar
             // 
             this.tabBuscar.BackColor = System.Drawing.Color.White;
+            this.tabBuscar.Controls.Add(this.label5);
+            this.tabBuscar.Controls.Add(this.txtBusca);
             this.tabBuscar.Controls.Add(this.dgBandas);
             this.tabBuscar.Location = new System.Drawing.Point(4, 30);
             this.tabBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -360,6 +364,24 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // txtBusca
+            // 
+            this.txtBusca.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBusca.Location = new System.Drawing.Point(109, 15);
+            this.txtBusca.Name = "txtBusca";
+            this.txtBusca.Size = new System.Drawing.Size(457, 32);
+            this.txtBusca.TabIndex = 1;
+            this.txtBusca.TextChanged += new System.EventHandler(this.txtBusca_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(35, 20);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 21);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Banda:";
+            // 
             // Sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -387,6 +409,7 @@
             this.tabCadastrar.ResumeLayout(false);
             this.tabCadastrar.PerformLayout();
             this.tabBuscar.ResumeLayout(false);
+            this.tabBuscar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgBandas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -419,5 +442,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dgBandas;
         private System.Windows.Forms.Label lblMensagem;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtBusca;
     }
 }

@@ -74,5 +74,11 @@ namespace SistemaCadastro
             else
                 MessageBox.Show(con.mensagem);
         }
+
+        private void txtBusca_TextChanged(object sender, EventArgs e)
+        {
+            (dgBandas.DataSource as DataTable).DefaultView.RowFilter =
+                string.Format("nome like '{0}%'", txtBusca.Text);
+        }
     }
 }
