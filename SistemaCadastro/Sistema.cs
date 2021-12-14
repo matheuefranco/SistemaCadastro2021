@@ -54,6 +54,13 @@ namespace SistemaCadastro
             listaDGBandas();
         }
 
+        void limpaCampos()
+        {
+            txtnome.Clear();
+            txtgenero.Clear();
+            txtintegrantes.Clear();
+            txtranking.Clear();
+        }// fim limpa campos
 
 
 
@@ -70,6 +77,8 @@ namespace SistemaCadastro
             {
                 MessageBox.Show("Dados inseridos com sucesso:)!");
                 listaDGBandas();
+                limpaCampos();
+                txtnome.Focus(); // cursor vai para o txtnome
             }
             else
                 MessageBox.Show(con.mensagem);
@@ -79,6 +88,29 @@ namespace SistemaCadastro
         {
             (dgBandas.DataSource as DataTable).DefaultView.RowFilter =
                 string.Format("nome like '{0}%'", txtBusca.Text);
+        }
+
+        private void btnRemoveBanda_Click(object sender, EventArgs e)
+        {
+            int linha = dgBandas.CurrentRow.Index;
+            int id =Convert.ToInt32(
+                    dgBandas.Rows[linha].Cells["idbandas"].Value.ToString() );
+            DialogResult resp = MessageBox.Show("Tem certeza que deseja excluir?",
+                "Remove Banda", MessageBoxButtons.OKCancel);
+            if (resp == DialogResult.OK)
+            {
+                ConectaBanco con = new ConectaBanco();
+                bool retorno = con.deletaBanda(id);
+                if (retorno == true)
+                {
+                    MessageBox.Show("Banda excluida com sucesso!");
+                    listaDGBandas();
+                }// fim if retorno true
+                else
+                    MessageBox.Show(con.mensagem);
+            }// fim if Ok Cancela
+            else
+                MessageBox.Show("Exclusão cancelada");
         }
     }
 }

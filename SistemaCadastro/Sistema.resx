@@ -57,4 +57,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <data name="btnRemoveBanda.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAOsAAADrASts18IAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAD4UlEQVRYR9WXWciUVRjHx7Q0XBITFwoxRcWLtAsDJTOjG7XFHQtEA0WEUq8kUCPSi0wxzS2QwGgD
+        UYku3LBcLrTIErTEBCU3ErQyNVxSyd/vnDnD6/jNzDvjd9MffnCel2/e9zzPeZbzFf5vegCGwAL4DLbB
+        TvgKVsBU6AzNrh6wBs7BbTgAm2ElvA+fwHY4D7dgL7wGLeC+1AGWwjX4AaZDF6iklvAsfAhX4Sd4HhpS
+        HzgKx2Ei1OvNY/AxGJF5UNfv9eJP2AJGIakNjIH18DNcgOtwEnbDW+DGsxoP/8AX0MoHteQL/PhHYEiV
+        yfc6nAZftglmwzgYASbfYjgC5sjn0BOSnoI/wEStqkfAsOt5+ng7+BquwDtFu5qegX1wCUb5oKjh8C9M
+        C1YFmXCeeQp7ezCRjkFfH+SU5/0u3ITJPijKqF2GJhPZpDFzJwQrhl3P/XgnHzSgWWAFDQ5WjOovsCpY
+        ZbLOLbWUrZ6rYe8XrMZlJfwKKQFfhhvQPVhF6a1NJp2P2X4KPPP7ldG7CDODFR08A8kOMnHM3m7BiqWm
+        97USLq8WwsG4DFoLtvGS3oYf4zLI1roxLkt6Aez7J2pwGJZBdvMD4T94IliFwitgbqRKC4PF2k7yJSZQ
+        knVsCbnzGTUw062kDZDVXzA2LgsDwA31ChbaCvbvJBuRTSbJgfNNXObSMLAFtw1WlJ3zzbgME9MNPB0s
+        ZGjfi8sgw2OHS1oE30Pefv4imOkmc9J3YKtWPncDQ4OFnOeee9JvYBkmGSqT0sRxsPiiSiwB2255rVtV
+        U+Iy5IIb8CiCDP+OuAxysGQjovrDOjBa1bB5vQGlBEN2VruiR6P03A10DBbSWy8T6Ud64mBpLr0Kf8ND
+        wSoU5oCJWtKj4A4dw8qJaF+wPzSHvoVP4zLICFuqd8lrVLYSLE2nWl0XiSY0Eizh1NK7gs4+F6yMvMM5
+        jBxKynnuSHWqNarH4Xf4IFhRq8GBlM2RID119Do8kpzn7jbblPLKjx+CPfCgD5BHazReClYT8gJpA8k2
+        Iee5fcGN5R3Lhl3P/Xj6zcPgtK3Z0OaD1y7bb5Lz3JHqVHOw2NvLZalNAhNOLw178tzofgn2AnOgqtIf
+        20y8RiU5zx2hTjVr2N5ue90PvtiPukGzPXuH0HPfZyPLOlVVfsyK8KUOl/KE8R8VR7a5MRfscDaZ5HGS
+        Z27Y3WDuj2flBcU7nFnrTSZvSRpms10HPPOaYa8mL5D2dV92FhzJo+FJcKq1Bnu7TcsOtwusHDddMdsb
+        kXc4c8CBZFWYB+XYXpeDuXNPnTenfHlvGAS2b6vC/ynqVKFwBzc66C/HTajOAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

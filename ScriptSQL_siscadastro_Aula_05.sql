@@ -43,3 +43,25 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `lista_bandas`()
 BEGIN
     SELECT * FROM siscadastro.bandas;
 END ;;
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `deleta_banda`(idbanda integer)
+BEGIN
+DELETE FROM `siscadastro`.`bandas`
+WHERE bandas.idbandas = idbanda;
+END
+
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insere_banda`(nome varchar(50), 
+     genero varchar(50), integrantes int, ranking int)
+BEGIN
+INSERT INTO siscadastro.bandas
+(`nome`,
+`genero`,
+`integrantes`,
+`ranking`)
+VALUES
+(nome,
+genero,
+integrantes,
+ranking);
+END
