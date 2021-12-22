@@ -50,12 +50,23 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabBuscar = new System.Windows.Forms.TabPage();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnRemoveBanda = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtBusca = new System.Windows.Forms.TextBox();
             this.dgBandas = new System.Windows.Forms.DataGridView();
+            this.tabAlterar = new System.Windows.Forms.TabPage();
+            this.txtAlteraRanking = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnConfirmaAlteracao = new System.Windows.Forms.Button();
+            this.txtAlteraIntegrantes = new System.Windows.Forms.TextBox();
+            this.txtAlteraGenero = new System.Windows.Forms.TextBox();
+            this.txtAlteraNome = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.lblMensagem = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnRemoveBanda = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -64,6 +75,7 @@
             this.tabCadastrar.SuspendLayout();
             this.tabBuscar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgBandas)).BeginInit();
+            this.tabAlterar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -183,6 +195,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabCadastrar);
             this.tabControl1.Controls.Add(this.tabBuscar);
+            this.tabControl1.Controls.Add(this.tabAlterar);
             this.tabControl1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tabControl1.Location = new System.Drawing.Point(207, 241);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -316,6 +329,7 @@
             // tabBuscar
             // 
             this.tabBuscar.BackColor = System.Drawing.Color.White;
+            this.tabBuscar.Controls.Add(this.btnAlterar);
             this.tabBuscar.Controls.Add(this.btnRemoveBanda);
             this.tabBuscar.Controls.Add(this.label5);
             this.tabBuscar.Controls.Add(this.txtBusca);
@@ -327,6 +341,44 @@
             this.tabBuscar.Size = new System.Drawing.Size(888, 394);
             this.tabBuscar.TabIndex = 1;
             this.tabBuscar.Text = "Buscar";
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.FlatAppearance.BorderSize = 0;
+            this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlterar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAlterar.ForeColor = System.Drawing.Color.DimGray;
+            this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
+            this.btnAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlterar.Location = new System.Drawing.Point(632, 8);
+            this.btnAlterar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(140, 42);
+            this.btnAlterar.TabIndex = 15;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlterar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
+            // 
+            // btnRemoveBanda
+            // 
+            this.btnRemoveBanda.FlatAppearance.BorderSize = 0;
+            this.btnRemoveBanda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveBanda.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRemoveBanda.ForeColor = System.Drawing.Color.DimGray;
+            this.btnRemoveBanda.Image = ((System.Drawing.Image)(resources.GetObject("btnRemoveBanda.Image")));
+            this.btnRemoveBanda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRemoveBanda.Location = new System.Drawing.Point(484, 8);
+            this.btnRemoveBanda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRemoveBanda.Name = "btnRemoveBanda";
+            this.btnRemoveBanda.Size = new System.Drawing.Size(140, 42);
+            this.btnRemoveBanda.TabIndex = 14;
+            this.btnRemoveBanda.Text = "Remover";
+            this.btnRemoveBanda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRemoveBanda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRemoveBanda.UseVisualStyleBackColor = true;
+            this.btnRemoveBanda.Click += new System.EventHandler(this.btnRemoveBanda_Click);
             // 
             // label5
             // 
@@ -348,6 +400,7 @@
             // 
             // dgBandas
             // 
+            this.dgBandas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgBandas.BackgroundColor = System.Drawing.Color.White;
             this.dgBandas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgBandas.Location = new System.Drawing.Point(35, 53);
@@ -357,6 +410,127 @@
             this.dgBandas.RowTemplate.Height = 29;
             this.dgBandas.Size = new System.Drawing.Size(797, 291);
             this.dgBandas.TabIndex = 0;
+            // 
+            // tabAlterar
+            // 
+            this.tabAlterar.Controls.Add(this.txtAlteraRanking);
+            this.tabAlterar.Controls.Add(this.label7);
+            this.tabAlterar.Controls.Add(this.btnConfirmaAlteracao);
+            this.tabAlterar.Controls.Add(this.txtAlteraIntegrantes);
+            this.tabAlterar.Controls.Add(this.txtAlteraGenero);
+            this.tabAlterar.Controls.Add(this.txtAlteraNome);
+            this.tabAlterar.Controls.Add(this.label8);
+            this.tabAlterar.Controls.Add(this.label9);
+            this.tabAlterar.Controls.Add(this.label10);
+            this.tabAlterar.Location = new System.Drawing.Point(4, 30);
+            this.tabAlterar.Name = "tabAlterar";
+            this.tabAlterar.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAlterar.Size = new System.Drawing.Size(888, 394);
+            this.tabAlterar.TabIndex = 2;
+            this.tabAlterar.Text = "Alterar";
+            this.tabAlterar.UseVisualStyleBackColor = true;
+            // 
+            // txtAlteraRanking
+            // 
+            this.txtAlteraRanking.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAlteraRanking.Location = new System.Drawing.Point(170, 221);
+            this.txtAlteraRanking.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAlteraRanking.Name = "txtAlteraRanking";
+            this.txtAlteraRanking.Size = new System.Drawing.Size(708, 32);
+            this.txtAlteraRanking.TabIndex = 20;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(10, 229);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 23);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Ranking:";
+            // 
+            // btnConfirmaAlteracao
+            // 
+            this.btnConfirmaAlteracao.FlatAppearance.BorderSize = 0;
+            this.btnConfirmaAlteracao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmaAlteracao.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnConfirmaAlteracao.ForeColor = System.Drawing.Color.DimGray;
+            this.btnConfirmaAlteracao.Image = ((System.Drawing.Image)(resources.GetObject("btnConfirmaAlteracao.Image")));
+            this.btnConfirmaAlteracao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfirmaAlteracao.Location = new System.Drawing.Point(374, 286);
+            this.btnConfirmaAlteracao.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnConfirmaAlteracao.Name = "btnConfirmaAlteracao";
+            this.btnConfirmaAlteracao.Size = new System.Drawing.Size(175, 75);
+            this.btnConfirmaAlteracao.TabIndex = 22;
+            this.btnConfirmaAlteracao.Text = "Confirmar Alteração";
+            this.btnConfirmaAlteracao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfirmaAlteracao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConfirmaAlteracao.UseVisualStyleBackColor = true;
+            this.btnConfirmaAlteracao.Click += new System.EventHandler(this.btnConfirmaAlteracao_Click);
+            // 
+            // txtAlteraIntegrantes
+            // 
+            this.txtAlteraIntegrantes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAlteraIntegrantes.Location = new System.Drawing.Point(170, 160);
+            this.txtAlteraIntegrantes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAlteraIntegrantes.Name = "txtAlteraIntegrantes";
+            this.txtAlteraIntegrantes.Size = new System.Drawing.Size(708, 32);
+            this.txtAlteraIntegrantes.TabIndex = 19;
+            // 
+            // txtAlteraGenero
+            // 
+            this.txtAlteraGenero.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAlteraGenero.Location = new System.Drawing.Point(170, 98);
+            this.txtAlteraGenero.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAlteraGenero.Name = "txtAlteraGenero";
+            this.txtAlteraGenero.Size = new System.Drawing.Size(708, 32);
+            this.txtAlteraGenero.TabIndex = 18;
+            // 
+            // txtAlteraNome
+            // 
+            this.txtAlteraNome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtAlteraNome.Location = new System.Drawing.Point(170, 34);
+            this.txtAlteraNome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAlteraNome.Name = "txtAlteraNome";
+            this.txtAlteraNome.Size = new System.Drawing.Size(708, 34);
+            this.txtAlteraNome.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.DimGray;
+            this.label8.Location = new System.Drawing.Point(10, 160);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(125, 23);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Integrantes:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.DimGray;
+            this.label9.Location = new System.Drawing.Point(10, 101);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(89, 23);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Genero:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.DimGray;
+            this.label10.Location = new System.Drawing.Point(10, 39);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 23);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Nome:";
             // 
             // lblMensagem
             // 
@@ -384,25 +558,6 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnRemoveBanda
-            // 
-            this.btnRemoveBanda.FlatAppearance.BorderSize = 0;
-            this.btnRemoveBanda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemoveBanda.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRemoveBanda.ForeColor = System.Drawing.Color.DimGray;
-            this.btnRemoveBanda.Image = ((System.Drawing.Image)(resources.GetObject("btnRemoveBanda.Image")));
-            this.btnRemoveBanda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRemoveBanda.Location = new System.Drawing.Point(484, 8);
-            this.btnRemoveBanda.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnRemoveBanda.Name = "btnRemoveBanda";
-            this.btnRemoveBanda.Size = new System.Drawing.Size(140, 42);
-            this.btnRemoveBanda.TabIndex = 14;
-            this.btnRemoveBanda.Text = "Remover";
-            this.btnRemoveBanda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRemoveBanda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRemoveBanda.UseVisualStyleBackColor = true;
-            this.btnRemoveBanda.Click += new System.EventHandler(this.btnRemoveBanda_Click);
             // 
             // Sistema
             // 
@@ -433,6 +588,8 @@
             this.tabBuscar.ResumeLayout(false);
             this.tabBuscar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgBandas)).EndInit();
+            this.tabAlterar.ResumeLayout(false);
+            this.tabAlterar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,5 +624,16 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtBusca;
         private System.Windows.Forms.Button btnRemoveBanda;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.TabPage tabAlterar;
+        private System.Windows.Forms.TextBox txtAlteraRanking;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnConfirmaAlteracao;
+        private System.Windows.Forms.TextBox txtAlteraIntegrantes;
+        private System.Windows.Forms.TextBox txtAlteraGenero;
+        private System.Windows.Forms.TextBox txtAlteraNome;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }

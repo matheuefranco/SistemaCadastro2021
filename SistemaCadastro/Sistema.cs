@@ -13,6 +13,7 @@ namespace SistemaCadastro
 {
     public partial class Sistema : Form
     {
+        int idAlterar;
 
         public Sistema()
         {
@@ -22,7 +23,7 @@ namespace SistemaCadastro
         
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnCadastra_Click(object sender, EventArgs e)
@@ -111,6 +112,38 @@ namespace SistemaCadastro
             }// fim if Ok Cancela
             else
                 MessageBox.Show("Exclusão cancelada");
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            int linha = dgBandas.CurrentRow.Index;
+            idAlterar = Convert.ToInt32(
+                    dgBandas.Rows[linha].Cells["idbandas"].Value.ToString());
+            txtAlteraNome.Text = dgBandas.Rows[linha].Cells["nome"].Value.ToString();
+            txtAlteraGenero.Text = dgBandas.Rows[linha].Cells["genero"].Value.ToString();
+            txtAlteraIntegrantes.Text = dgBandas.Rows[linha].Cells["integrantes"].Value.ToString();
+            txtAlteraRanking.Text = dgBandas.Rows[linha].Cells["ranking"].Value.ToString();
+            tabControl1.SelectedTab = tabAlterar;
+        }
+
+         private void btnConfirmaAlteracao_Click(object sender, EventArgs e)
+        {
+            Banda b = new Banda();
+            b.Nome = txtAlteraNome.Text;
+            b.Genero = txtAlteraGenero.Text;
+            b.Integrantes = Convert.ToInt32(txtAlteraIntegrantes.Text);
+            b.Ranking = Convert.ToInt32(txtAlteraRanking.Text);
+            ConectaBanco con = new ConectaBanco();
+            bool ret = con.alteraBanda(b, idAlterar);
+            if (ret == true) { 
+                MessageBox.Show("Banda alterada com sucesso!");
+                listaDGBandas();
+                tabControl1.SelectedTab = tabBuscar;
+            }// fim if true
+            else
+                MessageBox.Show(con.mensagem);
+
+
         }
     }
 }

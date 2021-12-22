@@ -93,9 +93,29 @@ namespace SistemaCadastro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap login {
+            get {
+                object obj = ResourceManager.GetObject("login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap the_who {
             get {
                 object obj = ResourceManager.GetObject("the_who", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undraw_compose_music_ovo2 {
+            get {
+                object obj = ResourceManager.GetObject("undraw_compose_music_ovo2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

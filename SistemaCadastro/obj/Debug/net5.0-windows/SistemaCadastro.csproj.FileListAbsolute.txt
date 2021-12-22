@@ -45,3 +45,4 @@ C:\Users\mefma\OneDrive\Documentos\Visual Studio 2019\Projects\Sistema Cadastro 
 C:\Users\mefma\OneDrive\Documentos\Visual Studio 2019\Projects\Sistema Cadastro Alunos 2021\SistemaCadastro\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
 C:\Users\mefma\OneDrive\Documentos\Visual Studio 2019\Projects\Sistema Cadastro Alunos 2021\SistemaCadastro\bin\Debug\net5.0-windows\ZstdNet.dll
 C:\Users\mefma\OneDrive\Documentos\Visual Studio 2019\Projects\Sistema Cadastro Alunos 2021\SistemaCadastro\obj\Debug\net5.0-windows\SistemaCadastro.csproj.CopyComplete
+C:\Users\mefma\OneDrive\Documentos\Visual Studio 2019\Projects\Sistema Cadastro Alunos 2021\SistemaCadastro\obj\Debug\net5.0-windows\SistemaCadastro.FrmLogin.resources
